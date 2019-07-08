@@ -1,1 +1,1 @@
-# JavaScript-Single-Page-Application-Frameworkless
+# JavaScript-Single-Page-Application-No Framework
