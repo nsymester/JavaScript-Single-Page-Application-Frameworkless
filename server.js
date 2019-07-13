@@ -9,6 +9,7 @@ const bodyParser = require('body-parser');
 require('dotenv').config(); // read .env files
 const express = require('express');
 
+// create an instance of express
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -18,6 +19,7 @@ app.use(express.static('public'));
 // Allow front-end access to node_modules folder
 app.use('/scripts', express.static(`${__dirname}/node_modules/`));
 
+// use body-parser to read properties from the request object
 app.use(
   bodyParser.urlencoded({
     extended: true
